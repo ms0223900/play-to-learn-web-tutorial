@@ -1,0 +1,16 @@
+body {
+  background-color: #00000005;
+}
+
+.paper {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 6px 10px #ddd;
+}
+
+.container {
+  /* display: flex; */
+  margin: auto;
+  padding: 20px;
+  max-width: 960px;
+}

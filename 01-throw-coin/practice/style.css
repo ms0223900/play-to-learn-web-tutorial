@@ -1,0 +1,17 @@
+#root {
+  text-align: center;
+}
+
+#coin {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 100%;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 120px;
+}
+
+#throwCoinBtn {
+  
+}
