@@ -41,7 +41,7 @@
   text-align: center;
   line-height: 120px;
   border-radius: 100%;
-  transform: rotateY(-180deg);
+  transform: rotateY(-180deg) translateX(4px);
 }
 
 .btn--wrapper {
