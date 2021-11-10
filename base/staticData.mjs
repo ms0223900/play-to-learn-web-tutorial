@@ -22,7 +22,7 @@ const HEADER_LIST_DATA = [
         title: 'Sample',
       },
       {
-        meta: '01-throw-coin_advanced',
+        meta: '02-tik-tak-toe_advanced',
         title: 'Advanced',
       },
     ]

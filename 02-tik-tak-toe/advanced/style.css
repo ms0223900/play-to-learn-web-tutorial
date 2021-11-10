@@ -1,0 +1,39 @@
+#root {
+  text-align: center;
+}
+
+.tic-tac-toe {
+  margin: auto;
+  width: 300px;
+}
+
+.row {
+  display: flex;
+}
+
+.grid {
+  width: 100px;
+  height: 100px;
+  font-size: 100px;
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  user-select: none;
+}
+
+.grid:hover {
+  background-color: #eee;
+}
+
+.grid[meta="CIRCLE"] {
+  color: #000;
+}
+
+.grid[meta="CROSS"] {
+  color: #ccc;
+}
+
+.button--wrapper {
+  padding: 8px 0;
+}
