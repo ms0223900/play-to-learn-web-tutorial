@@ -46,8 +46,7 @@
       player2GridState.push(gridIndex);
     }
     placedGridAmount += 1;
-
-
+    
     // 把這一輪的結果"輸出"，留待畫面更新
     return player;
   }

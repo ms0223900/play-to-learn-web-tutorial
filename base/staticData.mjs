@@ -18,7 +18,7 @@ const HEADER_LIST_DATA = [
     chapterTitle: '02 / Tick Tak Tok',
     subChapterList: [
       {
-        meta: '01-throw-coin_sample',
+        meta: '02-tik-tak-toe_sample',
         title: 'Sample',
       },
       {
