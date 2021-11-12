@@ -72,59 +72,6 @@
   // 最重要的邏輯
   // 確認"哪個玩家"贏了
 
-  // 方法1
-  // 根據"已知"的所有可能(即3個連成一線)，去找目前玩家的格子是否有符合的!
-  const allWinPosibilities = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
-
-    [0, 3, 6],
-    [1, 4, 7],
-    [2, 5, 8],
-
-    [0, 4, 8],
-    [2, 4, 6],
-  ];
-
-  function getPlayerGridState() {
-    if(currentPlayer === player1) {
-      return player1GridState.sort();
-    }
-    return player2GridState.sort();
-  }
-
-  // function checkPlayerWin() {
-  //   // 找到該回合下棋的玩家"所有OO or XX"
-  //   const allCurrentPlayerGrid = getPlayerGridState()
-    
-  //   // 根據已知"贏"的可能，一一比對該玩家是否符合贏的條件
-  //   for (let i = 0; i < allWinPosibilities.length; i++) {
-  //     const posibility = allWinPosibilities[i];
-      
-  //     // 將兩個陣列做"一致"的比較，其中一個方式就是讓其變成"字"，像是[0, 1, 2]變成"0,1,2"，跟[2, 3, 4]變成的"2,3,4"做比較
-  //     const posibilityStr = posibility.join(',');
-  //     const playerGridStr = allCurrentPlayerGrid.join(',');
-  //     if(posibilityStr === playerGridStr) {
-  //       return currentPlayer;
-  //     }
-  //   }
-
-  //   return false;
-  // }
-
-  // 方法2
-  // 這方法比較困難，雖然"效率"與方法1差不多
-  // 但可以應用於"格子數量"遠比這還多的棋盤遊戲(例如圍棋、五子棋)
-  // 根據玩家下的"格子"，去尋找橫向、直向和斜方向的格子
-
-  // 要先知道如何將儲存的格子[] -> 轉變成像是棋盤的"二維"結構
-  // [
-  //   [0, 1, 2],
-  //   [3, 4, 5],
-  //   [6, 7, 8],
-  // ]
-
   // 將"符合數量的狀況"抽象化"，之後可以將其用於5子棋等遊戲
   function checkSingleMatchSituation(amountForMatching = AMOUNT_FOR_WINNING, amountForChecking = 3, ) {
     return function(initGridIdx, player, getNextGridFn = (initIdx, i) => initIdx) {
